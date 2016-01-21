@@ -14,7 +14,13 @@
 
 ;; packages to install
 (setq
- my-packages '(auctex))
+ my-packages '(auctex
+	       auto-complete
+	       ein
+	       magit
+	       jedi
+	       helm
+	       helm-descbinds))
 
 ;; first enable shallow clone, so we don't need to clone the entire
 ;; history of every project
