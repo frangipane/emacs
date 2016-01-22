@@ -1,11 +1,14 @@
 # Emacs configuration
 
 tested on
-GNU Emacs 24.3.1 (x86_64-pc-linux-gnu, GTK+ Version 3.10.7)
+GNU Emacs 24.4.1 (x86_64-unknown-linux-gnu, GTK+ Version 3.10.8)
+
+Note, the `magit` as supplied by el-get is only compatible with Emacs versions = 24.4 (i.e. not Emacs 24.3!)
 
 ## Trouble building AUCTeX
 
 If you get an error that contains:
-$$ el-get could not build auctex [./autogen.sh]$$
+` el-get could not build auctex [./autogen.sh]`
 
 make sure you have $automake$ and $texlive-full$ installed (on Ubuntu).
+
