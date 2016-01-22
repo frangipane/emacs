@@ -12,7 +12,13 @@
     (goto-char (point-max))
     (eval-print-last-sexp)))
 
-;; packages to install
+
+;; packages to install from local sources
+;(setq
+; el-get-sources '(:name magit
+;			:type elpa
+
+;; packages to install from recipe files
 (setq
  my-packages '(auctex
 	       auto-complete
@@ -21,6 +27,7 @@
 	       jedi
 	       helm
 	       helm-descbinds))
+
 
 ;; first enable shallow clone, so we don't need to clone the entire
 ;; history of every project
