@@ -5,6 +5,7 @@ GNU Emacs 24.4.1 (x86_64-unknown-linux-gnu, GTK+ Version 3.10.8)
 
 Note, the `magit` v2.x package supplied by el-get is only compatible with Emacs versions = 24.4 (i.e. not Emacs 24.3!).  See [el-get issue thread](https://github.com/dimitri/el-get/issues/2279).
 
+
 ## Trouble building AUCTeX
 
 If you get an error that contains:
@@ -12,4 +13,24 @@ If you get an error that contains:
 n.sh]`
 
 make sure you have `automake` and `texlive-full` installed (on Ubuntu).
+
+## Emacs plugins
+
+The plugins listed below are installed by el-get and specified in `.emacs.d/settings/el-get-settings.el`
+
+- auctex -- LaTeX support
+- auto-complete -- auto-completion
+- ein -- IPython notebook support
+- magit -- git support
+- jedi -- general Python support
+- helm -- [completion and selection narrowing](https://github.com/emacs-helm/helm) framework
+- helm-descbinds -- describe keybindings using helm
+- markdown-mode -- markdown support
+
+
+## Credit
+
+Based on Jessica Hamrick's [emacs configuration](https://github.com/jhamrick/emacs)
+
+
 
