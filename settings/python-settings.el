@@ -9,6 +9,9 @@
 ; from python.el
 (require 'python)
 
+(setq
+ python-shell-interpreter "ipython")
+
 
 ;; -----------------------------
 ;; emacs IPython notebook config
@@ -18,6 +21,14 @@
 (include-plugin "emacs-ipython-notebook/lisp")
 (require 'ein)
 
+
+;; ------------------
+;; misc python config
+;; ------------------
+
+; pydoc info
+(include-plugin "pydoc-info-0.2")
+(require 'pydoc-info)
 
 ; keybindings
 (eval-after-load 'python
