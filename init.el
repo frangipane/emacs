@@ -14,6 +14,14 @@
 (require 'el-get-settings)
 
 
+;-----------;
+;;; Modes ;;;
+;-----------;
+
+;; Python mode
+(require 'python-settings)
+
+
 ;---------------------------------------------------------------------
 ;; Put auto 'custom' changes in a separate file (this is stuff like
 ;; custom-set-faces and custom-set-variables)
