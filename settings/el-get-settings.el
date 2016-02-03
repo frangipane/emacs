@@ -26,7 +26,8 @@
 	       magit
 	       jedi
 	       helm
-	       helm-descbinds))
+	       helm-descbinds
+	       markdown-mode))
 
 
 ;; first enable shallow clone, so we don't need to clone the entire
