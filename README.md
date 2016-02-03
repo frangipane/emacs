@@ -8,7 +8,8 @@ Note, the `magit` v2.x package supplied by el-get is only compatible with Emacs 
 ## Trouble building AUCTeX
 
 If you get an error that contains:
-` el-get could not build auctex [./autogen.sh]`
+`Error (el-get): while installing auctex: el-get: ./autogen.sh el-get could not build auctex [./autoge\
+n.sh]`
 
 make sure you have `automake` and `texlive-full` installed (on Ubuntu).
 
