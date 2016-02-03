@@ -27,7 +27,8 @@
 	       jedi
 	       helm
 	       helm-descbinds
-	       markdown-mode))
+	       markdown-mode
+               color-theme-solarized))
 
 
 ;; first enable shallow clone, so we don't need to clone the entire

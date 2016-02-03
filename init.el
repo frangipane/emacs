@@ -5,10 +5,18 @@
 (setq plugin-path "~/.emacs.d/el-get/")
 
 ;; define various custom functions
-;(require 'custom-functions)
+(require 'custom-functions)
 
 ;; configure general settings
 (require 'general-settings)
 
 ;; install dependencies with el-get
 (require 'el-get-settings)
+
+
+;---------------------------------------------------------------------
+;; Put auto 'custom' changes in a separate file (this is stuff like
+;; custom-set-faces and custom-set-variables)
+(load 
+ (setq custom-file (expand-file-name "settings/custom.el" user-emacs-directory))
+ 'noerror)
