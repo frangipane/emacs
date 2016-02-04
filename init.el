@@ -18,6 +18,10 @@
 ;;; Modes ;;;
 ;-----------;
 
+;; Ido mode
+(require 'ido)
+(ido-mode 1)
+
 ;; Python mode
 (require 'python-settings)
 
