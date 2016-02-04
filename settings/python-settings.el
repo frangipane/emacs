@@ -27,8 +27,8 @@
 ;; ------------------
 
 ; pydoc info
-(include-plugin "pydoc-info-0.2")
-(require 'pydoc-info)
+;(include-plugin "pydoc-info")
+;(require 'pydoc-info)
 
 ; keybindings
 (eval-after-load 'python
