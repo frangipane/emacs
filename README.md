@@ -51,10 +51,24 @@ Warning: Unknown defun property `interactive-only' in flycheck-set-checker-execu
 ```
 
 To [make the warnings go away](https://github.com/flycheck/flycheck/issues/604) byte-compile
-flycheck.el, e.g. `M-x byte-compile-file RET [file to byte-compile]`
+`flycheck.el`, e.g. `M-x byte-compile-file RET [file to byte-compile]`
 
 In this particular setup, you would launch emacs and type 
 `M-x byte-compile-file RET ~/.emacs.d/el-get/flycheck/flycheck.el`
+
+### problem launching `ein:notebooklist-open` - `cl-generic` kluge
+
+`cl-generic` appears to be an undeclared
+[dependency for the `ein` package](https://github.com/syl20bnr/spacemacs/issues/4663),
+so trying to interact with IPython notebook by typing `M-x
+ein:notebooklist-open` inside emacs gives an error to the effect of
+`"Cannot open load file" "no such file or directory" "cl-generic"`.  
+
+I included a manual installation of `cl-generic` in
+`el-get-settings.el`.  However, I still had to navigate to
+`~\.emacs.d\el-get\cl-generic` and manually rename `cl-generic-0.2.*`
+to `cl-generic.*` to get around the error.
+
 
 ## Credit
 

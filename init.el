@@ -41,6 +41,10 @@
 ;; Helm
 ;(require 'helm-settings)
 
+;; cl-generic for ein
+(include-plugin "cl-generic")
+(require 'cl-generic)
+
 
 ;-----------;
 ;;; Modes ;;;
