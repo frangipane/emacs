@@ -18,6 +18,9 @@
 ; el-get-sources '(:name magit
 ;			:type elpa
 
+(el-get-bundle cl-generic
+  :url "https://elpa.gnu.org/packages/cl-generic-0.2.el")
+
 ;; packages to install from recipe files
 (setq
  my-packages '(auctex
@@ -31,6 +34,9 @@
                elpy
                flycheck))
 
+
+;; byte compile flycheck to prevent warnings
+;(byte-compile-file "~/.emacs.d/el-get/flycheck/flycheck.el")
 
 ;; first enable shallow clone, so we don't need to clone the entire
 ;; history of every project
