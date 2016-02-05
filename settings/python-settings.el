@@ -39,7 +39,7 @@
 (eval-after-load 'python
   '(define-key python-mode-map (kbd "<C-return>") 'python-shell-send-region))
 
-(provide 'python-settings2)
+(provide 'python-settings)
 
 
 
