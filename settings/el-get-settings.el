@@ -29,8 +29,7 @@
 	       markdown-mode
                color-theme-solarized
                elpy
-               flycheck
-               py-autopep8))
+               flycheck))
 
 
 ;; first enable shallow clone, so we don't need to clone the entire
