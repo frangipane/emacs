@@ -14,6 +14,34 @@
 (require 'el-get-settings)
 
 
+;---------------;
+;;; Utilities ;;;
+;---------------;
+
+
+;; Git
+;(include-plugin "magit")
+;(require 'magit)
+
+;; Popup
+(include-elget-plugin "popup")
+(require 'popup)
+
+;; Websocket
+(include-plugin "websocket")
+(require 'websocket)
+
+;; Request
+(include-plugin "request")
+(require 'request)
+
+;; Auto complete
+;(require 'auto-complete-settings)
+
+;; Helm
+;(require 'helm-settings)
+
+
 ;-----------;
 ;;; Modes ;;;
 ;-----------;
@@ -22,8 +50,14 @@
 (require 'ido)
 (ido-mode 1)
 
-;; Python mode
+;; Markdown mode
+;(require 'markdown-settings)
+
+;; Python mode 
 (require 'python-settings)
+
+;; LaTeX and Auctex
+;(require 'latex-settings)
 
 
 ;---------------------------------------------------------------------
