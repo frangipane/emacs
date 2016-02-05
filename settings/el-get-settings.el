@@ -24,12 +24,13 @@
 	       auto-complete
 	       ein
 	       magit
-	       jedi
 	       helm
 	       helm-descbinds
 	       markdown-mode
                color-theme-solarized
-               pydoc-info))
+               elpy
+               flycheck
+               py-autopep8))
 
 
 ;; first enable shallow clone, so we don't need to clone the entire
