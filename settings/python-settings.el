@@ -29,13 +29,7 @@
 ;; misc python config
 ;; ------------------
 
-; pydoc info
-;(include-plugin "pydoc-info")
-;(require 'pydoc-info)
-
 ; keybindings
-;(eval-after-load 'python
-;  '(define-key python-mode-map (kbd "C-c !") 'python-shell-switch-to-shell))
 (eval-after-load 'python
   '(define-key python-mode-map (kbd "<C-return>") 'python-shell-send-region))
 
