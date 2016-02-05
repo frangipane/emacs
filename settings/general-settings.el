@@ -82,10 +82,10 @@
 ;(global-set-key [f4] 'goto-line)
 
 ; require final newlines in files when they are saved
-(setq require-final-newline 1)
+;(setq require-final-newline 1)
 
 ; add a new line when going to the next line
-(setq next-line-add-newlines t)
+;(setq next-line-add-newlines t)
 
 ; show the current line and column numbers in the stats bar as well
 (line-number-mode 1)
@@ -101,6 +101,9 @@
 ; highlight parentheses when the cursor is next to them
 (require 'paren)
 (show-paren-mode 1)
+
+; enable line numbers globally
+(global-linum-mode 1)
 
 ; text decoration
 ;(require 'font-lock)
