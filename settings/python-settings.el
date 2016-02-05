@@ -3,23 +3,26 @@
 ;------------------------;
 
 ;; -----------------------
-;; python.el configuration
+;; Elpy configuration
 ;; -----------------------
 
-; from python.el
-(require 'python)
+;; Elpy
+(elpy-enable)
 
-(setq
- python-shell-interpreter "ipython")
+;; use IPython REPL instead of standard Python REPL integration
+(elpy-use-ipython)
 
+;; Emacs+elpy comes with package called Flymake to support syntax checking.
+;; Switch out Flymake for Flycheck, which supports realtime syntax checking.
+;; dependency: conda install flake8
+(when (require 'flycheck nil t)
+  (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
+  (add-hook 'elpy-mode-hook 'flycheck-mode))
 
-;; -----------------------------
-;; emacs IPython notebook config
-;; -----------------------------
-
-; IPython notebook
-(include-plugin "emacs-ipython-notebook/lisp")
-(require 'ein)
+;; enable autopep8 formatting
+;; dependency: conda install autopep8 (NA via anaconda)
+;(require 'py-autopep8)
+;(add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
 
 
 ;; ------------------
@@ -31,10 +34,12 @@
 ;(require 'pydoc-info)
 
 ; keybindings
+;(eval-after-load 'python
+;  '(define-key python-mode-map (kbd "C-c !") 'python-shell-switch-to-shell))
 (eval-after-load 'python
-  '(define-key python-mode-map (kbd "C-c !") 'python-shell-switch-to-shell))
+  '(define-key python-mode-map (kbd "<C-return>") 'python-shell-send-region))
 
-(provide 'python-settings)
+(provide 'python-settings2)
 
 
 
