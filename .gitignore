@@ -1,4 +1,7 @@
 el-get/
+elpa/
+snippets/
 auto-save-list/
 *.elc
 ac-comphist.dat
+ido.last
