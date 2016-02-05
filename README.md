@@ -12,13 +12,13 @@ The plugins listed below are installed by el-get and specified in `.emacs.d/sett
 
 - auctex -- LaTeX support
 - auto-complete -- auto-completion
+- elpy -- Python IDE-like environment for emacs
 - ein -- IPython notebook support
 - magit -- git support
-- jedi -- general Python support
 - helm -- [completion and selection narrowing](https://github.com/emacs-helm/helm) framework
 - helm-descbinds -- describe keybindings using helm
 - markdown-mode -- markdown support
-- pydoc-info -- Python documentation
+- flycheck -- realtime syntax checking
 
 
 ## Errors
@@ -31,13 +31,16 @@ n.sh]`
 
 make sure you have `automake` and `texlive-full` installed (on Ubuntu).
 
-### pydoc-info plug-in
+### Elpy dependencies
 
-The installation (by el-get) of the `pydoc-info` plug-in requires
-mercurial, i.e. `hg` to be installed.  Otherwise, you'll see an error like
+Elpy is dependent on the python packages:
+`jedi, flake8, importmagic, autopep8, yapf`
 
-`Error (el-get): while installing pydoc-info: The command named 'hg'
-can not be found with 'executable-find'`
+The latter three are not available through the standard anaconda
+repository via `conda install <package>`, but can be installed through `pip`.
+
+At the moment, this set up does not enable the Elpy functionalities
+that rely upon those three packages.
 
 
 
