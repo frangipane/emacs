@@ -55,7 +55,7 @@
 (ido-mode 1)
 
 ;; Markdown mode
-;(require 'markdown-settings)
+(require 'markdown-settings)
 
 ;; Python mode 
 (require 'python-settings)
@@ -63,6 +63,8 @@
 ;; LaTeX and Auctex
 ;(require 'latex-settings)
 
+;; ESS (R) mode
+(require 'ess-settings)
 
 ;---------------------------------------------------------------------
 ;; Put auto 'custom' changes in a separate file (this is stuff like

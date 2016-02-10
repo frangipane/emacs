@@ -32,7 +32,8 @@
 	       markdown-mode
                color-theme-solarized
                elpy
-               flycheck))
+               flycheck
+               ess))
 
 
 ;; byte compile flycheck to prevent warnings
