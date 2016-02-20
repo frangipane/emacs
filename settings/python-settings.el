@@ -10,7 +10,7 @@
 (elpy-enable)
 
 ;; set 
-(setq elpy-rpc-pythonpath "jedi")
+(setq elpy-rpc-backend "jedi")
 
 ;; use IPython REPL instead of standard Python REPL integration
 (elpy-use-ipython)
