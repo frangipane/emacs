@@ -9,8 +9,16 @@
 ;; Elpy
 (elpy-enable)
 
+;; set 
+(setq elpy-rpc-pythonpath "jedi")
+
 ;; use IPython REPL instead of standard Python REPL integration
 (elpy-use-ipython)
+
+(custom-set-variables
+ '(elpy-interactive-python-command "ipython"))
+; '(python-shell-interpreter "ipython"))
+
 
 ;; Emacs+elpy comes with package called Flymake to support syntax checking.
 ;; Switch out Flymake for Flycheck, which supports realtime syntax checking.
