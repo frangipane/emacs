@@ -72,7 +72,7 @@ to `cl-generic.*` to get around the error.
 
 ## Credit
 
-Based on Jessica Hamrick's [emacs configuration](https://github.com/jhamrick/emacs)
+Structured after Jessica Hamrick's old [emacs configuration](https://github.com/jhamrick/emacs)
 
 
 
