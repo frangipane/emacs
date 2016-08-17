@@ -13,7 +13,7 @@
 (setq elpy-rpc-backend "jedi")
 
 ;; use IPython REPL instead of standard Python REPL integration
-(elpy-use-ipython)
+;;(elpy-use-ipython)
 
 ;; Emacs+elpy comes with package called Flymake to support syntax checking.
 ;; Switch out Flymake for Flycheck, which supports realtime syntax checking.
